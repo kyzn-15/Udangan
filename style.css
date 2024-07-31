@@ -1,0 +1,534 @@
+:root {
+    --primary: #ffec3f;
+    --green: #1c9900;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+body.dark section.page.one ,body.dark section.page.two, body.dark section.page.three, body.dark section.page.four, body.dark section.page.five, body.dark section.page.six{
+    background-image: url(background-dark.jpeg);
+    
+
+}
+
+body.dark{
+    background-color: black;
+}
+
+div.container {
+    max-width: 31.25rem; 
+    min-width: 300px;
+    margin: 0px auto;
+}
+
+.btn {
+    position: fixed;
+    top: 0;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1111;
+    display: flex;
+}
+
+.btn-2{
+    display: none;
+}
+
+.hidden{
+    transform: translateY(100%);
+    filter: blur(10px);
+}
+
+.show{
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all 1s ease-in-out;
+}
+
+
+section.page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: salmon;
+    margin-bottom: 1rem;
+    
+}
+
+section.page.two, section.page.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.page.one {
+    /* gap: 300pt; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(background1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.hero-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+div.guest-name {
+    padding-top: 100pt;
+    text-shadow: -1px -1px 18px black;
+}
+
+div.title {
+    font-family:'Dancing Script', cursive;
+    
+}
+
+p.title1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family:'Dancing Script', cursive;
+    color: white;
+    text-shadow: -1px -1px 18px black;
+    
+}
+
+h1#name {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--primary);
+    font-family:'Dancing Script', cursive;
+    text-shadow: -1px -1px 18px black;
+}
+
+h1#name-main{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--primary);
+    font-family:'Dancing Script', cursive;
+    text-shadow: -1px -1px 18px black;
+}
+
+p#date {
+    font-size: 1.8rem;
+    text-shadow: -1px -1px 18px black;
+}
+
+p#time {
+    font-size: 1rem;
+}
+
+div.guest-name {
+    width: 31.25rem;
+}
+
+div.guest-name p {
+    color: white;
+}
+
+p#nama-tamu {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+p, h1{
+    text-align: center;
+} 
+
+section.page.one > div > h1 {
+    font-size: 30pt;
+}
+
+section.page.two {
+    justify-content: space-evenly;
+    background-image: url(background2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.page.two h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: -1px -1px 18px black;
+}
+
+
+section.page.two h1 {
+    color: var(--primary);
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -1px -1px 25px black;
+}
+
+div.wrapper {
+    max-width: 25vw;
+}
+
+div.wrapper h5{
+    text-align: justify;
+    text-wrap: wrap;
+    color: white;
+    text-shadow: -1px -1px 10px black;
+}
+
+
+div.card {
+    padding: 10pt;
+    min-width: 250pt;
+    max-width: 350pt;
+    height: 300pt;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body.dark div.card{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+div.card h1 {
+    color: var(--green);
+}
+
+div.circle {
+    width: 150pt;
+    height: 150pt;
+    border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 1rem;
+    background-image: url(background4.jpeg);
+    background-position: 50% 5%;
+    background-size: cover;
+    border: 3px solid var(--primary);
+    box-shadow: 0px 0px 1000rem black;
+}
+
+div#circle2{
+    width: 150pt;
+    height: 150pt;
+    border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 1rem;
+    background-image: url(background5.jpeg);
+    background-position: 50% 15%;
+    background-size: cover;
+    border: 3px solid var(--primary);
+}
+
+div.line{
+    background-color: var(--primary);
+    width: 200px;
+    height: 3px;
+    margin: 0px auto;
+}
+
+p.name2 {
+    color: var(--primary);
+    text-shadow: -1px -1px 10px black;
+    
+}
+
+section.page.three {
+    justify-content: space-evenly;
+    background-image: url(background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+section.page.three h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: -1px -1px 18px black;
+}
+
+section.page.three h1 {
+    color: var(--primary);
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -1px -1px 25px black;
+}
+
+section.page.four{
+    background-image: url(background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+div.top h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 18px black;
+}
+
+h1.location {
+    color: var(--primary);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+}
+
+h1#icon {
+    margin-top: 1rem;
+    color: red;
+}
+
+div.card2 {
+    padding: 10pt;
+    width: 95pt;
+    max-width: 200pt;
+    height: 95pt;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 18px black;
+}
+
+body.dark div.card2{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+div.bottom {
+    margin-top: 70pt;
+    gap: 1rem;
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1.number {
+    color: var(--primary);
+    text-shadow: 0px 0px 18px black;
+    font-size: 2.5rem;
+}
+
+div.card2 h2 {
+    color: white;
+    text-shadow: 0px 0px 18px black;
+}
+
+div.line2 {
+    width: 60px;
+    height: 5px;
+    box-shadow: 0px 0px 30px black;
+    background-color: var(--primary);
+}
+
+section.page.five {
+    background-image: url(background7.jpeg);
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2#title5 {
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+    text-shadow: 0px 9px 18px black;
+}
+
+div#bottom2 {
+    margin-top: 4rem;
+}
+
+div.card3 {
+    padding: 10pt;
+    min-width: 250pt;
+    max-width: 350pt;
+    min-height: 300pt;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 18px black;
+}
+
+body.dark div.card3{
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+li.card-list {
+    color: var(--primary);
+    text-shadow: 0px 0px 18px black;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.page.six{
+    background-image: url(background1.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.bottom#timer{
+    background-color: rgb(8, 156, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+div#timer p {
+    color: white;
+    font-weight: bold;
+}
+
+div.time {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.time-container {
+    background-color: #e4cf0e;
+    border-radius: 0.5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-container p {
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.titik {
+    margin-top: 0.5rem;
+}
+
+
+div.footer h2 {
+    color: white;
+    font-size: 4rem;
+    margin-top: 10rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0px 0px 18px black;
+}
+
+
+
+@media (max-width: 450px) {
+    *{
+        max-width: 100vw;
+    }
+
+    body{
+        max-width: 100vw;
+    }
+
+    .guess-name{
+        width: 100vw;
+        padding: 0px;
+    }
+
+    div.container{
+        max-width: 100vw;
+    }
+
+    div.time{
+        font-size: 1.5rem;
+        gap: 0.1rem;
+    }
+
+    div.bottom#timer{
+        background-color: rgb(8, 156, 8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 23rem;
+        border-radius: 0.5rem;
+        padding-bottom: 1rem;
+        
+    }
+
+    div.wrapper {
+        max-width: 85vw;
+    }
+    
+    div.circle, .circle#circle2{
+        --size: 105pt;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .btn-2{
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 1rem;
+        width: 35vw;
+        height: 15vw;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        background-color: magenta;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0px 0px  20px white;
+        box-shadow: 0px 0px 20px white;
+        border: none;
+    }
+}
